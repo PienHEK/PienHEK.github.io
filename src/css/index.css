@@ -1,7 +1,7 @@
-@import "//cdn.jsdelivr.net/npm/font-kopubworld@1.0/batang.min.css";
+@import "//cdn.jsdelivr.net/npm/font-kopubworld@1.0";
 
 body {
-    font-family: "KoPubWorld Batang";
+    font-family: "KoPubWorld Batang1";
     white-space: nowrap;
 }
 a {
