@@ -2,6 +2,7 @@
 
 body {
     font-family: "KoPubWorld Batang1";
+    /* 이거 씨ㅂ ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ 이름 중복이라 적용 1도 안된거였음 시ㅣㅣㅣㅣㅣㅣㅣㅣㅣ발 진짜 */
     white-space: nowrap;
 }
 a {
@@ -13,7 +14,7 @@ a {
     justify-content: center; */
     position: fixed;
 
-    width: 100%;
+    width: 99vw;
     height: 90px;
     margin: 0 auto;
 
@@ -87,7 +88,7 @@ a {
     right: 0;
     bottom: 0;
     /* content부터 bottom까지 이미지 표시를 위한 내용. */
-    background: url("/img/index.png") no-repeat center center;
+    background: url("/asset/img/index.png") no-repeat center center;
     background-size: cover;
     background-blend-mode: multiply;
     opacity: 20%;
@@ -148,6 +149,7 @@ a {
     width: 100%;
     gap: 100px;
 }
+
 /* -------------------------------인적 사항 제목부------------------------------- */
 .content .about .about-title {
     display: flex;
@@ -161,6 +163,7 @@ a {
     font-size: 64px;
     border-bottom: 1px solid #8b8b8b;
 }
+
 /* -------------------------------인적 사항 내용부------------------------------- */
 .content .about .about-content {
     /* display: grid;
@@ -174,6 +177,7 @@ a {
 
     width: 100%;
 }
+
 /* -------------------------------인적 사항 내용부 1------------------------------- */
 .content .about .about-content .sub1 {
     /* display: flex;
@@ -187,6 +191,7 @@ a {
 
     /* gap: 300px; */
 }
+
 /* -------------------------------이름------------------------------- */
 
 .content .about .about-content .sub1 .name1 {
@@ -250,6 +255,7 @@ a {
 
     /* gap: 150px; */
 }
+
 /* -------------------------------연락처------------------------------- */
 
 .content .about .about-content .sub2 .phone1 {
@@ -338,15 +344,23 @@ a {
 }
 /* -------------------------------기술 내용부------------------------------- */
 .content .skill .skill-box .skill-content {
-    display: grid;
-    grid-template-columns: 7;
-    /* grid-template-rows: 1; */
+    /* display: grid; */
+    /* grid-template-columns: 7; */
+    /* grid-template-rows: 1;원래 주석 */
 
-    width: 70%;
+    /* width: 70%; */
 
-    /* gap: 50px; */
+    gap: 50px;
+
+    display: flex;
+    flex-direction: row;
 }
-
+/* -------------------------------skill1------------------------------- */
+.content .skill .skill-box .skill-content .skill1 {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
 /* -------------------------------프론트------------------------------- */
 .content .skill .skill-box .skill-content .front {
     display: flex;
@@ -362,8 +376,9 @@ a {
     font-weight: bold;
 }
 .content .skill .skill-box .skill-content .front .stack {
-    width: 300px;
+    width: 200px;
     height: 130px;
+    object-fit: contain;
 }
 /* -------------------------------백------------------------------- */
 .content .skill .skill-box .skill-content .back {
@@ -385,8 +400,15 @@ a {
     flex-direction: column;
 }
 .content .skill .skill-box .skill-content .back .stack-box .stack {
-    width: 300px;
+    width: 200px;
     height: 130px;
+    object-fit: contain;
+}
+/* -------------------------------skill2------------------------------- */
+.content .skill .skill-box .skill-content .skill2 {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
 }
 /* -------------------------------형상관리------------------------------- */
 .content .skill .skill-box .skill-content .vc {
@@ -394,8 +416,6 @@ a {
     flex-direction: column;
 
     align-items: center;
-
-    grid-column: 5;
 
     gap: 30px;
 }
@@ -405,10 +425,10 @@ a {
 }
 
 .content .skill .skill-box .skill-content .vc .stack {
-    width: 300px;
+    width: 200px;
     height: 130px;
+    object-fit: contain;
 }
-
 /* -------------------------------자격증------------------------------- */
 .content .skill .skill-box .skill-content .cert {
     display: flex;
@@ -425,8 +445,9 @@ a {
     font-weight: bold;
 }
 .content .skill .skill-box .skill-content .cert .stack {
-    width: 300px;
+    width: 200px;
     height: 130px;
+    object-fit: contain;
 }
 .content .skill .skill-box .skill-content .cert .cert-name {
     font-size: 32px;
@@ -561,7 +582,7 @@ a {
 .content .project .project-box {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 99vw;
     gap: 100px;
     align-items: center;
 }
@@ -599,6 +620,7 @@ a {
     width: 500px;
     height: 550px;
     align-items: center;
+    object-fit: contain;
 }
 
 .content .project .project-box .project-content .width-prj .project-name {
@@ -633,6 +655,7 @@ a {
     width: 500px;
     height: 400px;
     align-items: center;
+    object-fit: contain;
 }
 .content .project .project-box .project-content .height-prj .project-name {
     grid-column: 3;
@@ -664,6 +687,7 @@ a {
     width: 400px;
     height: 300px;
     align-items: center;
+        object-fit: contain;
 }
 .content .project .project-box .project-content .project3 .project-name {
     grid-column: 3;
@@ -695,6 +719,7 @@ a {
     width: 400px;
     height: 300px;
     align-items: center;
+        object-fit: contain;
 }
 .content .project .project-box .project-content .project4 .project-name {
     grid-column: 3;
@@ -745,5 +770,334 @@ a {
     }
     .content .project {
         height: 100%;
+    }
+}
+
+@media (max-width: 1600px) {
+    /* ----------------------------------------------인적사항 1600이하 설정 ----------------------------------------------*/
+    .content .about .about-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .content .about .about-content .sub1 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-end;
+    }
+    .content .about .about-content .sub1 .name1 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .content .about .about-content .sub1 .name2 {
+        font-size: 25px;
+        font-weight: lighter;
+    }
+    .content .about .about-content .sub1 .birth1 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .content .about .about-content .sub1 .birth2 {
+        font-size: 25px;
+        font-weight: lighter;
+    }
+    .content .about .about-content .sub1 .address1 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .content .about .about-content .sub1 .address2 {
+        font-size: 25px;
+        font-weight: lighter;
+    }
+    .content .about .about-content .sub2 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .content .about .about-content .sub2 .phone1 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .content .about .about-content .sub2 .phone2 {
+        font-size: 25px;
+        font-weight: lighter;
+    }
+    .content .about .about-content .sub2 .email1 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .content .about .about-content .sub2 .email2 {
+        font-size: 25px;
+        font-weight: lighter;
+    }
+    .content .about .about-content .sub2 .education1 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .content .about .about-content .sub2 .education2 {
+        font-size: 25px;
+        font-weight: lighter;
+    }
+    .content .about .about-content .sub2 .education3 {
+        font-size: 25px;
+        font-weight: lighter;
+    }
+    /* ----------------------------------------------기술 1600이하 설정---------------------------------------------- */
+    /* -------------------------------기술 내용부------------------------------- */
+    .content .skill .skill-box .skill-content {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+    /* -------------------------------skill1------------------------------- */
+    .content .skill .skill-box .skill-content .skill1 {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    /* -------------------------------프론트------------------------------- */
+
+    .content .skill .skill-box .skill-content .front .title {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .content .skill .skill-box .skill-content .front .stack {
+        font-size: 25px;
+        font-weight: lighter;
+    }
+    /* -------------------------------백------------------------------- */
+
+    .content .skill .skill-box .skill-content .back .title {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .content .skill .skill-box .skill-content .back .stack-box {
+        font-size: 25px;
+        font-weight: lighter;
+    }
+    .content .skill .skill-box .skill-content .back .stack-box .stack {
+        font-size: 25px;
+        font-weight: lighter;
+    }
+    /* -------------------------------skill2------------------------------- */
+
+    .content .skill .skill-box .skill-content .skill2 {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    /* -------------------------------형상관리------------------------------- */
+
+    .content .skill .skill-box .skill-content .vc .title {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .content .skill .skill-box .skill-content .vc .stack {
+        font-size: 25px;
+        font-weight: lighter;
+    }
+    /* -------------------------------자격증------------------------------- */
+
+    .content .skill .skill-box .skill-content .cert .title {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .content .skill .skill-box .skill-content .cert .stack {
+        font-size: 25px;
+        font-weight: lighter;
+    }
+    .content .skill .skill-box .skill-content .cert .cert-name {
+        font-size: 25px;
+        font-weight: lighter;
+    }
+    /* ----------------------------------------------프로젝트 1600이하 설정---------------------------------------------- */
+    .content .project .project-box .project-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 50px;
+    }
+
+    .content .project .project-box .project-content .width-prj {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 60px;
+    }
+    .content .project .project-box .project-content .height-prj {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 1000px) {
+    /* ----------------------------------------------기술 1000이하 설정---------------------------------------------- */
+    .content .skill {
+        height: 1500px;
+    }
+    .content .skill .skill-box {
+        gap: 50px;
+    }
+    /* -------------------------------기술 내용부------------------------------- */
+    .content .skill .skill-box .skill-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    /* -------------------------------skill1------------------------------- */
+    .content .skill .skill-box .skill-content .skill1 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* -------------------------------프론트------------------------------- */
+    .content .skill .skill-box .skill-content .front {
+        gap: 10px;
+    }
+
+    .content .skill .skill-box .skill-content .front .title {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .content .skill .skill-box .skill-content .front .stack {
+        font-size: 30px;
+        font-weight: lighter;
+        width: 150px;
+        height: 80px;
+    }
+    /* -------------------------------백------------------------------- */
+    .content .skill .skill-box .skill-content .back {
+        gap: 10px;
+    }
+    .content .skill .skill-box .skill-content .back .title {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .content .skill .skill-box .skill-content .back .stack-box {
+        font-size: 30px;
+        font-weight: lighter;
+    }
+    .content .skill .skill-box .skill-content .back .stack-box .stack {
+        font-size: 30px;
+        font-weight: lighter;
+        width: 150px;
+        height: 80px;
+    }
+    /* -------------------------------skill2------------------------------- */
+
+    .content .skill .skill-box .skill-content .skill2 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* -------------------------------형상관리------------------------------- */
+    .content .skill .skill-box .skill-content .vc {
+        gap: 10px;
+    }
+    .content .skill .skill-box .skill-content .vc .title {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .content .skill .skill-box .skill-content .vc .stack {
+        font-size: 30px;
+        font-weight: lighter;
+        width: 150px;
+        height: 80px;
+    }
+    /* -------------------------------자격증------------------------------- */
+    .content .skill .skill-box .skill-content .cert {
+        gap: 10px;
+    }
+    .content .skill .skill-box .skill-content .cert .title {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .content .skill .skill-box .skill-content .cert .stack {
+        font-size: 30px;
+        font-weight: lighter;
+        width: 150px;
+        height: 80px;
+    }
+    .content .skill .skill-box .skill-content .cert .cert-name {
+        font-size: 30px;
+        font-weight: lighter;
+    }
+    /* --------------------------------------------------------------아카이브-------------------------------------------------------------- */
+    .content .archive {
+    }
+    .content .archive .archive-box {
+        gap: 10px;
+    }
+    /* -------------------------------아카이브 제목부------------------------------- */
+
+    /* -------------------------------아카이브 내용부------------------------------- */
+    .content .archive .archive-box .archive-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .content .archive .archive-box .archive-content .archive-git {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content .archive .archive-box .archive-content .img {
+        width: 200px;
+        height: 130px;
+        object-fit: contain;
+    }
+    .content .archive .archive-box .archive-content .archive-git .content1 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .content .archive .archive-box .archive-content .archive-git .content2 {
+        font-size: 20px;
+        font-weight: lighter;
+    }
+    .content .archive .archive-box .archive-content .archive-git .content3 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .content .archive .archive-box .archive-content .archive-git .content4 {
+        font-size: 20px;
+        font-weight: lighter;
+    }
+    .content .archive .archive-box .archive-content .archive-notion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content .archive .archive-box .archive-content .archive-notion .img {
+        width: 200px;
+        height: 130px;
+        object-fit: contain;
+    }
+    .content .archive .archive-box .archive-content .archive-notion .content1 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .content .archive .archive-box .archive-content .archive-notion .content2 {
+        font-size: 20px;
+        font-weight: lighter;
+    }
+    .content .archive .archive-box .archive-content .archive-notion .content3 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .content .archive .archive-box .archive-content .archive-notion .content4 {
+        font-size: 20px;
+        font-weight: lighter;
     }
 }
